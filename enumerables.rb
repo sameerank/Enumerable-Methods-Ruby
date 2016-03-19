@@ -42,24 +42,6 @@ class Array
     result
   end
 
-  # def my_zip(*args)
-  #   result = []
-  #   temp = []
-  #   i = 0
-  #   while i < self.length
-  #     temp << self[i]
-  #     j = 0
-  #     while j < self.length
-  #       a = args[i][j]
-  #       temp << a
-  #       j += 1
-  #     end
-  #     result << temp
-  #     temp = []
-  #     i += 1
-  #   end
-  #   result
-  # end
   def my_zip(*args)
     ary = [self] + args
     max_rows = ary.map { |el| el.length }.max
